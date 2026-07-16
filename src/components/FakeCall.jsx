@@ -56,7 +56,7 @@ export const FakeCall = () => {
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 20, opacity: 0, scale: 0.95, filter: "blur(4px)" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] w-[320px] md:w-[380px]"
+            className="fixed bottom-4 left-4 right-4 md:left-auto md:bottom-10 md:right-10 z-[100] w-auto md:w-[380px]"
           >
             {/* macOS Calendar / Cron Style Notification */}
             <div className="glassmorphism rounded-3xl p-5 shadow-[0_20px_40px_rgba(0,0,0,0.4)] border border-white/10 bg-[#121212]/95 backdrop-blur-3xl relative overflow-hidden group">
@@ -115,7 +115,7 @@ export const FakeCall = () => {
               initial={{ scale: 0.95, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: 20 }}
-              className="glassmorphism w-full max-w-lg rounded-[2.5rem] p-10 relative border border-white/10 bg-[#0A0A0A] shadow-2xl"
+              className="glassmorphism w-full max-w-lg rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 relative border border-white/10 bg-[#0A0A0A] shadow-2xl"
             >
               <button 
                 onClick={closeDialog}
