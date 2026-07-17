@@ -14,7 +14,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto flex flex-col items-center">
         <motion.a
-          href="/CV.pdf"
+          href="./CV.pdf"
           download="Moiz_Anwar_CV.pdf"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
