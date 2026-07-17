@@ -5,7 +5,8 @@ import {
   PiBriefcaseDuotone as Briefcase, 
   PiFileCodeDuotone as FileCode, 
   PiGraduationCapDuotone as GraduationCap, 
-  PiCertificateDuotone as Award 
+  PiCertificateDuotone as Award,
+  PiTrophyDuotone as Trophy
 } from 'react-icons/pi';
 import { cn } from '../lib/utils';
 
@@ -14,6 +15,7 @@ const apps = [
   { id: 'experience', icon: Briefcase, label: 'Experience' },
   { id: 'academics', icon: GraduationCap, label: 'Academics' },
   { id: 'certifications', icon: Award, label: 'Certifications' },
+  { id: 'extra-curriculars', icon: Trophy, label: 'Activities' },
   { id: 'projects', icon: FileCode, label: 'Projects' },
 ];
 

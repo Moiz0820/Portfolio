@@ -6,6 +6,7 @@ import { Timeline } from './components/Timeline';
 import { BentoGrid } from './components/BentoGrid';
 import { Academics } from './components/Academics';
 import { Certifications } from './components/Certifications';
+import { ExtraCurriculars } from './components/ExtraCurriculars';
 import { Footer } from './components/Footer';
 import { FakeCall } from './components/FakeCall';
 
@@ -17,6 +18,7 @@ function App() {
       <Timeline />
       <Academics />
       <Certifications />
+      <ExtraCurriculars />
       <BentoGrid />
       <Footer />
       <Dock />

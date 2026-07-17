@@ -73,7 +73,7 @@ const projects = [
 
 const tech = ['PowerBI', 'Python', 'n8n', 'Tableau', 'R Studio', 'SQL', 'HTML', 'CSS', 'JavaScript'];
 const skills = ['Data Analysis', 'Financial Reporting', 'Strategic Decisions', 'Automation', 'AI/ML', 'Research Analysis', 'UI/UX', 'Project Management'];
-const hobbies = ['Writing', 'Swimming', 'Drawing', 'Bookreading', 'Trekking', 'Xenophile'];
+const hobbies = ['Writing', 'Drawing', 'Swimming', 'Fitness & Workouts', 'Trekking', 'Xenophile', 'Reading'];
 
 export const BentoGrid = () => {
   const [selectedProject, setSelectedProject] = useState(null);
