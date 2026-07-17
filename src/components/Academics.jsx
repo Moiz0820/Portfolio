@@ -19,7 +19,7 @@ export const Academics = () => {
   return (
     <section id="academics" className="py-24 max-w-5xl mx-auto px-4 md:px-8">
       <div className="mb-12 flex items-center gap-4">
-        <GraduationCap className="w-8 h-8 text-brand-500" />
+        <GraduationCap className="w-8 h-8 text-brand-500 animate-pulse" />
         <h2 className="text-3xl md:text-5xl font-bold">Academics</h2>
       </div>
 

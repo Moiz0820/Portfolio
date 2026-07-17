@@ -9,7 +9,8 @@ import {
   PiPulseDuotone as Activity, 
   PiHeartDuotone as Heart, 
   PiArrowUpRightDuotone as ArrowUpRight, 
-  PiListChecksDuotone as ListChecks 
+  PiListChecksDuotone as ListChecks,
+  PiWrenchDuotone as Wrench
 } from 'react-icons/pi';
 import { cn } from '../lib/utils';
 
@@ -80,9 +81,12 @@ export const BentoGrid = () => {
 
   return (
     <section id="projects" className="py-24 max-w-5xl mx-auto px-4 md:px-8">
-      <div className="mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 font-display">Craft & Core</h2>
-        <p className="text-white/60 text-base font-light font-sans">Featured projects and the tools I use to build them.</p>
+      <div className="mb-12 flex items-center gap-4">
+        <Wrench className="w-8 h-8 text-brand-500 animate-pulse" />
+        <div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-1 font-display">Craft & Core</h2>
+          <p className="text-white/60 text-base font-light font-sans">Featured projects and the tools I use to build them.</p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
