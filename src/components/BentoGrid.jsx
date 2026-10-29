@@ -10,11 +10,27 @@ import {
   PiHeartDuotone as Heart, 
   PiArrowUpRightDuotone as ArrowUpRight, 
   PiListChecksDuotone as ListChecks,
-  PiWrenchDuotone as Wrench
+  PiWrenchDuotone as Wrench,
+  PiArrowSquareOutDuotone as ExternalLink,
+  PiGithubLogoDuotone as Github
 } from 'react-icons/pi';
 import { cn } from '../lib/utils';
 
 const projects = [
+  {
+    title: 'FinPulse — FX & Macro Terminal',
+    desc: 'Institutional-grade foreign exchange terminal with real-time ECB feeds, GCC peg anchor, and drift simulation.',
+    details: [
+      'Architected a real-time currency intelligence terminal consuming live European Central Bank (ECB) reference rates across 30+ world reserve currencies.',
+      'Engineered an interactive quantitative time-series engine with 7-day Simple Moving Average (SMA-7), volatility dispersion metrics (σ), and day-over-day delta momentum tracking.',
+      'Integrated a procurement timing drift simulator and synthetic central bank peg engine for UAE Dirham (AED), calculating foreign exchange risk for cross-border investments.',
+      'Implemented 1-click tabular dataset export to CSV for seamless integration with Power BI, Excel, and Python analytics pipelines.'
+    ],
+    icon: Activity,
+    colSpan: 'md:col-span-2',
+    liveUrl: 'https://moiz0820.github.io/FinPulse/',
+    githubUrl: 'https://github.com/Moiz0820/FinPulse'
+  },
   {
     title: 'Financial Intelligence Platform',
     desc: 'Engineered a custom Financial Intelligence Platform automating real-time revenue, ROI, and comprehensive project profitability.',
@@ -253,6 +269,33 @@ function ProjectModal({ proj, onClose }) {
             </div>
           ) : (
             <p className="opacity-60 italic text-center py-10">Detailed overview content pending generation...</p>
+          )}
+
+          {(proj.liveUrl || proj.githubUrl) && (
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              {proj.liveUrl && (
+                <a
+                  href={proj.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-brand-500 hover:bg-brand-400 text-zinc-950 font-bold font-sans text-sm tracking-wide transition-all shadow-lg hover:shadow-brand-500/25 cursor-pointer"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>Launch Live Project</span>
+                </a>
+              )}
+              {proj.githubUrl && (
+                <a
+                  href={proj.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-medium font-sans text-sm tracking-wide transition-all border border-white/10 cursor-pointer"
+                >
+                  <Github className="w-4 h-4" />
+                  <span>View Repository</span>
+                </a>
+              )}
+            </div>
           )}
         </div>
       </motion.div>
