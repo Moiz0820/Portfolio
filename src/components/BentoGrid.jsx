@@ -32,58 +32,81 @@ const projects = [
     githubUrl: 'https://github.com/Moiz0820/FinPulse'
   },
   {
-    title: 'Financial Intelligence Platform',
-    desc: 'Engineered a custom Financial Intelligence Platform automating real-time revenue, ROI, and comprehensive project profitability.',
+    title: 'UrbanMetric — Geospatial Infrastructure Engine',
+    desc: 'Commercial real estate spatial density, multimodal transit accessibility, and 5-dimension catchment scoring.',
     details: [
-      'Engineered a custom Financial Intelligence Platform using Python, JavaScript, HTML, and CSS to automate the calculation of real-time revenue, ROI, and comprehensive project profitability.',
-      'Architected an end-to-end financial forecasting engine that utilizes historical data to predict project performance, resulting in a 70% reduction in manual workload for both management and the analytics team.',
-      'Streamlined executive decision-making by consolidating complex financial workstreams into a centralized dashboard, replacing legacy manual reporting with automated, high-fidelity forecasting models.'
+      'Engineered a high-density spatial analytics engine calculating pedestrian transit catchment radiuses (500m-2000m) and distance decay impedance models.',
+      'Integrated zero-auth Esri World Dark Gray Canvas and OpenStreetMap GIS raster tile layers with building-level satellite inspection.',
+      'Formulated a 5-dimension radar equilibrium scoring engine evaluating transit mobility, commercial hubs, retail amenities, lifestyle, and essential services.',
+      'Implemented dynamic radial POI generation on map clicks with 1-click CSV spatial inventory dataset export.'
     ],
     icon: LineChart,
-    colSpan: 'md:col-span-2'
+    colSpan: 'md:col-span-2',
+    liveUrl: 'https://moiz0820.github.io/UrbanMetric/',
+    githubUrl: 'https://github.com/Moiz0820/UrbanMetric'
   },
   {
-    title: 'IntervAI',
-    desc: 'AI-driven recruitment tool using OpenAI matching realistic interview environments.',
+    title: 'MacroDivergence — World Bank Econometric Engine',
+    desc: 'Closed-form Ordinary Least Squares (OLS) bivariate regression and longitudinal cross-country economic divergence.',
     details: [
-      'Developed a real-time speech-to-text pipeline using OpenAI Whisper and GPT-4 to generate customized, dynamic follow-up questions during mock interviews.',
-      'Built an interactive client dashboard with React and WebRTC to record, stream, and evaluate candidate performance metrics (sentiment, vocabulary, and response time).',
-      'Designed an automated assessment generator that matches resume keyword profiles with industry standards, reducing candidate screening latency by 45%.'
-    ],
-    icon: BrainCircuit,
-    colSpan: 'md:col-span-1'
-  },
-  {
-    title: 'Mask Detection',
-    desc: 'Facial detection with OpenCV, Matplot, and Python.',
-    details: [
-      'Trained a convolutional neural network (CNN) on over 10,000 face images with and without masks, achieving a 94.6% verification accuracy rate.',
-      'Leveraged OpenCV\'s Haar cascades and Single Shot MultiBox Detector (SSD) to implement high-speed real-time detection on resource-constrained video feeds.',
-      'Integrated a notification trigger system using Matplotlib for visual validation, sending automated alerts to security systems when mask violations occur.'
-    ],
-    icon: Code2,
-    colSpan: 'md:col-span-1'
-  },
-  {
-    title: 'RiNAZ',
-    desc: 'Raspberry Pi NAS online network storage platform for automated file sorting.',
-    details: [
-      'Configured a Raspberry Pi 4 Model B with a custom Linux server to host a Samba-based Network Attached Storage (NAS) accessible across local networks.',
-      'Wrote automated Bash and Python cron jobs to scan target directories, extract file metadata, and dynamically organize files into categorized storage paths.',
-      'Optimized read/write throughput by 30% through custom cache configurations, disk striping, and hardware monitoring scripts.'
-    ],
-    icon: Server,
-    colSpan: 'md:col-span-1'
-  },
-  {
-    title: 'Counterfeit Images',
-    desc: 'Research on detection capabilities using ML and forensics.',
-    details: [
-      'Conducted comprehensive digital image forensic research to identify localized pixel inconsistencies, color filter array (CFA) interpolation anomalies, and compression traces.',
-      'Trained custom autoencoders and ResNet models to distinguish between authentic images and AI-generated (GAN/diffusion-based) synthetic media, yielding a 91% F1 score.',
-      'Published structural analysis and detection pipeline benchmarks for image tampering detection in academic domains.'
+      'Built a split-pane econometric research terminal consuming live World Bank Open Data API v2 across emerging and advanced trading economies.',
+      'Formulated closed-form OLS mathematical regression algorithms computing slope (β₁), intercept (β₀), Pearson correlation (r), and goodness-of-fit (R²).',
+      'Developed an empirical residual decomposition model highlighting structural economic outperformance (eᵢ = Yᵢ - Ŷᵢ) with dynamic sample cohort filtering.',
+      'Engineered longitudinal multi-country time series trajectories (2019-2024) with 1-click harmonized empirical CSV dataset export.'
     ],
     icon: Database,
+    colSpan: 'md:col-span-1',
+    liveUrl: 'https://moiz0820.github.io/MacroDivergence/',
+    githubUrl: 'https://github.com/Moiz0820/MacroDivergence'
+  },
+  {
+    title: 'AirPulse — Atmospheric Telemetry Engine',
+    desc: 'High-frequency particulate dispersion (PM2.5/PM10) and WHO 2021 air quality compliance across 8 global megacities.',
+    details: [
+      'Engineered a 3-column industrial mission control flight deck consuming live European ECMWF / CAMS atmospheric telemetry via Open-Meteo.',
+      'Developed synchronized multi-station polling monitoring 6 criteria pollutants (PM2.5, PM10, NO2, O3, CO, SO2) with live WHO guideline cap breach alerts.',
+      'Modeled 24-hour diurnal sinusoidal dispersion curves simulating rush-hour emission peaks and atmospheric thermal inversions.',
+      'Integrated a differential ranking matrix computing percentage deltas against WHO safe limits with instant telemetry CSV export.'
+    ],
+    icon: Server,
+    colSpan: 'md:col-span-1',
+    liveUrl: 'https://moiz0820.github.io/AirPulse/',
+    githubUrl: 'https://github.com/Moiz0820/AirPulse'
+  },
+  {
+    title: 'TalentMetrics — Global Tech Labor & Arbitrage Engine',
+    desc: 'Cross-border AI & Data Science compensation percentiles, purchasing power parity, and Dubai 0% tax arbitrage.',
+    details: [
+      'Architected a dual-pane financial workbench analyzing P25/P50/P75/P90 compensation distributions across 7 global engineering hubs.',
+      'Engineered an interactive fiscal tax arbitrage simulator modeling statutory income tax and prime 1BR rents to compute net discretionary cash yield.',
+      'Implemented high-dimensional skill premium multipliers for specialized capabilities (LLM fine-tuning, distributed Spark, MLOps, Econometrics).',
+      'Built a comparative hub matrix demonstrating net purchasing power superiority of Dubai 0% tax shield over US/EU hubs with CSV reporting.'
+    ],
+    icon: BrainCircuit,
+    colSpan: 'md:col-span-2',
+    liveUrl: 'https://moiz0820.github.io/TalentMetrics/',
+    githubUrl: 'https://github.com/Moiz0820/TalentMetrics'
+  },
+  {
+    title: 'Financial Intelligence Platform',
+    desc: 'Custom enterprise intelligence platform automating real-time revenue, ROI, and comprehensive project profitability.',
+    details: [
+      'Engineered a custom Financial Intelligence Platform automating the calculation of real-time revenue, ROI, and comprehensive project profitability at Faateh Real Estate.',
+      'Architected an end-to-end forecasting engine utilizing historical data to predict performance, reducing manual workload by 70%.',
+      'Consolidated complex corporate workstreams into an executive dashboard, replacing legacy manual reports with automated models.'
+    ],
+    icon: LineChart,
+    colSpan: 'md:col-span-1'
+  },
+  {
+    title: 'IntervAI — Dynamic Evaluation Pipeline',
+    desc: 'AI-driven technical evaluation pipeline using Whisper and GPT-4 matching realistic interview conditions.',
+    details: [
+      'Developed a real-time speech-to-text pipeline using OpenAI Whisper and GPT-4 to generate customized, dynamic follow-up questions during mock interviews.',
+      'Built an interactive dashboard with React and WebRTC to record, stream, and evaluate candidate performance metrics (sentiment, vocabulary, and latency).',
+      'Designed an automated assessment generator matching resume keyword profiles with industry standards, reducing screening latency by 45%.'
+    ],
+    icon: Code2,
     colSpan: 'md:col-span-1'
   }
 ];
