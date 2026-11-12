@@ -128,10 +128,10 @@ export const BentoGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
 
         {/* Skills & Attributes Column (Left Side) */}
-        <div className="lg:col-span-1 flex flex-col gap-6">
+        <div className="lg:col-span-1 flex flex-col gap-6 lg:sticky lg:top-24">
           {/* Tech Arsenal */}
           <motion.div
             whileHover={{ y: -2 }}
@@ -168,21 +168,40 @@ export const BentoGrid = () => {
             </div>
           </motion.div>
 
-          {/* Hobbies */}
+          {/* Hobbies / Interests */}
           <motion.div
             whileHover={{ y: -2 }}
-            className="glassmorphism p-6 rounded-3xl flex flex-col group h-full bg-white/5"
+            className="glassmorphism p-6 rounded-3xl flex flex-col group bg-white/5"
           >
             <div className="flex items-center gap-3 mb-4">
               <Heart className="w-5 h-5 text-rose-500 group-hover:scale-110 transition-transform" />
               <h3 className="text-lg font-bold text-white/90 font-display">Interests</h3>
             </div>
-            <div className="flex flex-wrap gap-1.5 mt-auto">
+            <div className="flex flex-wrap gap-1.5">
               {hobbies.map(hobby => (
                 <span key={hobby} className="px-2 py-1 rounded-md text-[11px] font-medium tracking-wide uppercase text-white/70 border border-brand-500/10 hover:border-brand-500/50 cursor-default transition-colors font-sans">
                   {hobby}
                 </span>
               ))}
+            </div>
+          </motion.div>
+
+          {/* Focus Snapshot */}
+          <motion.div
+            whileHover={{ y: -2 }}
+            className="glassmorphism p-5 rounded-3xl flex flex-col group bg-white/5 border border-white/10"
+          >
+            <div className="flex items-center justify-between text-xs font-mono text-white/60 mb-2">
+              <span>LOCATION</span>
+              <span className="text-brand-500 font-bold">DUBAI, UAE</span>
+            </div>
+            <div className="flex items-center justify-between text-xs font-mono text-white/60 mb-2">
+              <span>EXPERIENCE</span>
+              <span className="text-white font-bold">2.5+ YEARS</span>
+            </div>
+            <div className="flex items-center justify-between text-xs font-mono text-white/60">
+              <span>LIVE ENGINES</span>
+              <span className="text-white font-bold">5 SYSTEMS</span>
             </div>
           </motion.div>
         </div>
